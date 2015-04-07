@@ -22,7 +22,7 @@ class Nvc(Linter):
     version_re = r'nvc (?P<version>\d+\.\d+)'
     version_requirement = '>= 0.1'
     multiline = True
-    tempfile_suffix = '-'
+    tempfile_suffix = 'vhd'
 
     # Here is a sample nvc error output:
     # ----8<------------
@@ -55,11 +55,6 @@ class Nvc(Linter):
         """
 
         match, line, col, error, warning, message, near = super().split_match(match)
-
-        # Not sure the filename check is required, but we do it
-        # anyway just in case...
-        if match and match.group('path') != self.filename:
-            match = None
 
         if match:
             # The error messages given by nvc can be very long,
