@@ -1,7 +1,7 @@
 SublimeLinter-contrib-nvc
 ================================
 
-[![Build Status](https://travis-ci.org/SublimeLinter/SublimeLinter-contrib-nvc.svg?branch=master)](https://travis-ci.org/SublimeLinter/SublimeLinter-contrib-nvc)
+[![Build Status](https://travis-ci.org/BrunoJJE/SublimeLinter-contrib-nvc.svg?branch=master)](https://travis-ci.org/BrunoJJE/SublimeLinter-contrib-nvc)
 
 This linter plugin for [SublimeLinter][docs] provides an interface to [nvc](https://github.com/nickg/nvc). It will be used with files that have the “VHDL” syntax.
 
